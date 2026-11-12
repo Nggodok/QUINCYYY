@@ -28,15 +28,20 @@ public class MangaViewModel extends ViewModel {
         return mangaRepository.getLatestMangaList(limit, offset);
     }
 
-    // Most Popular Manga
+    // Most Popular Manga e
     public LiveData<List<MangaModel>> getPopularMangaList(
             int limit, int offset) {
 
         return mangaRepository.getPopularMangaList(limit, offset);
     }
 
-    // Nomor chapter terbaru
+    // Nomor chapter terbaru e
     public LiveData<String> getLatestChapter(String mangaId) {
         return mangaRepository.getLatestChapter(mangaId);
+    }
+
+    // rating mangadex e
+    public LiveData<String> getMangaRating(String mangaId) {
+        return mangaRepository.getMangaRating(mangaId);
     }
 }
