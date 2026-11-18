@@ -98,6 +98,23 @@ public class MangaModel {
             return "No Title";
         }
 
+        public String getDescriptionText() {
+            if (description != null) {
+                String en = description.get("en");
+                if (en != null && !en.trim().isEmpty()) {
+                    return en.trim();
+                }
+
+                for (String value : description.values()) {
+                    if (value != null && !value.trim().isEmpty()) {
+                        return value.trim();
+                    }
+                }
+            }
+
+            return "";
+        }
+
         public String getLastChapter() {
             return lastChapter;
         }

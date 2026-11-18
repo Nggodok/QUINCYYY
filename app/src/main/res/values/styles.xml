@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GenreChip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="chipBackgroundColor">@color/surface</item>
+        <item name="chipStrokeColor">@color/stroke</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+</resources>
