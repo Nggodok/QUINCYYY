@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">quincy</string>
     <string name="quincy" />
+    <string name="cari_judul">Cari Judul</string>
+    <string name="total_pencarian">Total Pencarian</string>
+    <string name="genre_logo_content_description"/>
+    <string name="search_results_title"/>
+
 </resources>
